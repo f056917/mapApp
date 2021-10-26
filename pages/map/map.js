@@ -8,10 +8,13 @@ Page({
     setting: {
       latitude: 31.025944,
       longitude: 121.64634,
+      subkey: 'ROGBZ-KJPRS-D2POT-673CF-VMRQK-3IBQO',
       scale: 18,
-      minScale: 16,
+      minScale: 3,
       enableOverlooking: true,
-      showLocation: true
+      showLocation: true,
+      enablePoi: true,
+      enableBuilding: false
     },
     markers: []
   },
