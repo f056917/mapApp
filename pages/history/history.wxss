@@ -1,0 +1,55 @@
+.history {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 200rpx;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/scroll.png) center no-repeat;
+  background-size: 90% 100%;
+  background-color: #E9DFC8;
+  position: relative;
+  overflow: hidden;
+}
+.history-close {
+  height: 86rpx;
+  position: absolute;
+  top: 34rpx;
+  right: 78rpx;
+  z-index: 10;
+}
+.history-close image {
+  height: 100%;
+}
+.history-main {
+  width: 476rpx;
+  padding: 38rpx 33rpx 200rpx;
+  box-sizing: border-box;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/border.png) center no-repeat;
+  background-size: 100% 100%;
+  margin: 152rpx auto 480rpx;
+}
+.history-title {
+  text-align: center;
+  padding-bottom: 9rpx;
+  border-bottom: 4rpx solid #333;
+}
+.history-title text {
+  color: #333;
+  font-size: 42rpx;
+  font-weight: bold;
+}
+.history-box {
+  height: 100rpx;
+  border-bottom: 6rpx solid #333;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.history-box-name {
+  color: #333;
+  font-size: 38rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+.history-box-time {
+  color: #333;
+  font-size: 16rpx;
+  text-align: right;
+}

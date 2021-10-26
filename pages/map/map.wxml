@@ -1,0 +1,3 @@
+<view class="map-box">
+  <map class="map" setting="{{setting}}" markers="{{markers}}" bindmarkertap="toScenic"></map>
+</view>

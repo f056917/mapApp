@@ -1,0 +1,10 @@
+/**app.wxss**/
+button {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+image {
+  height: auto;
+}

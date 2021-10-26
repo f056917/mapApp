@@ -1,0 +1,38 @@
+.task-done {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #E9DFC8;
+  overflow: hidden;
+}
+.task-done-head {
+  margin: 8rpx 12rpx 160rpx 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task-done-name {
+  width: 306rpx;
+  height: 116rpx;
+  text-align: center;
+  line-height: 116rpx;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/options_bg.png) center no-repeat;
+  background-size: 100% 100%;
+}
+.task-done-name text {
+  color: #fff;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.task-box-img {
+  margin: 0 32rpx 96rpx;
+}
+.task-box-img image {
+  width: 100%;
+}
+.task-box-bt {
+  text-align: center;
+}
+.task-box-bt image {
+  height: 176rpx;
+}

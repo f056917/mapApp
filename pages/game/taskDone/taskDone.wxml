@@ -1,0 +1,25 @@
+<view class="task-done">
+  <view class="task-done-head">
+    <view class="task-done-name">
+      <text>{{taskInfo.name}}</text>
+    </view>
+    <view class="task-done-close" bindtap="toBack">
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png" mode="heightFix"></image>
+    </view>
+  </view>
+  <view class="task-done-detail">
+    <text>{{taskInfo.problem_detail}}</text>
+  </view>
+  <view class="task-done-img">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/task_box.png" mode="widthFix"></image>
+  </view>
+  <view class="task-info-code" wx:if="{{taskInfo.answer_type == 1 && taskInfo.taskStatus == 0}}">
+    <cash-box bindcomplated="complated"></cash-box>
+  </view>
+  <view class="task-info-input" wx:if="{{taskInfo.answer_type == 2 && taskInfo.taskStatus == 0}}">
+    <input type="text" value="{{code}}" bindinput="inputCode" placeholder="请输入文字" placeholder-style="color: $828282;"></input>
+  </view>
+  <view class="task-info-confirm" wx:if="{{(taskInfo.answer_type == 1 || taskInfo.answer_type == 2) && taskInfo.taskStatus == 0}}" bindtap="doneTask">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/clue_bt.png" mode="heightFix"></image>
+  </view>
+</view>

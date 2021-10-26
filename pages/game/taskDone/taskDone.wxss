@@ -1,0 +1,81 @@
+.task-done {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 200rpx;
+  box-sizing: border-box;
+  background-color: #E9DFC8;
+  overflow: hidden;
+}
+.task-done-head {
+  margin: 8rpx 12rpx 96rpx 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task-done-name {
+  width: 306rpx;
+  height: 116rpx;
+  text-align: center;
+  line-height: 116rpx;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/options_bg.png) center no-repeat;
+  background-size: 100% 100%;
+}
+.task-done-name text {
+  color: #fff;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.task-done-close {
+  height: 140rpx;
+}
+.task-done-close image {
+  height: 140rpx;
+}
+.task-done-detail {
+  margin: 0 36rpx 96rpx;
+}
+.task-done-detail text {
+  color: #333;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.task-done-img {
+  margin: 0 60rpx 70rpx;
+}
+.task-done-img image {
+  width: 100%;
+}
+.task-info-code {
+  width: 486rpx;
+  height: 110rpx;
+  padding: 0 18rpx 20rpx 0;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/code_bg.png) center no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.task-info-input {
+  width: 468rpx;
+  height: 136rpx;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/task_bt_bg.png) center no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.task-info-input input {
+  width: 80%;
+  color: #fff;
+  font-size: 28rpx;
+  text-align: center;
+}
+.task-info-confirm {
+  height: 78rpx;
+  text-align: center;
+}
+.task-info-confirm image {
+  height: 100%;
+}

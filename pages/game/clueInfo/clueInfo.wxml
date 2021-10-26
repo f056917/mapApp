@@ -1,0 +1,28 @@
+<view class="clue-info">
+  <view class="clue-info-close" bindtap="toBack">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png" mode="heightFix"></image>
+  </view>
+  <view class="clue-info-main">
+    <view class="clue-info-title">
+      <text wx:if="{{clueInfo.type == 0}}">公共线索</text>
+      <text wx:if="{{clueInfo.type == 1}}">小组线索</text>
+      <text wx:if="{{clueInfo.type == 2}}">个人线索</text>
+    </view>
+    <view class="clue-info-image">
+      <image src="{{clueInfo.img}}" mode="widthFix" wx:if="{{clueInfo.img}}"></image>
+    </view>
+    <view class="clue-info-content">
+      <text>{{clueInfo.detail}}</text>
+    </view>
+    <view class="clue-info-bt" bindtap="toBack">
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/to_public.png"
+       wx:if="{{clueInfo.type == 1 && clueInfo.isCanOpen == 1}}" 
+       catchtap="toPublic"
+       mode="heightFix"></image>
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/clue_bt.png" mode="heightFix"></image>
+    </view>
+  </view>
+  <view class="clue-info-rabbit">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/rabbit3.png" mode="heightFix"></image>
+  </view>
+</view>

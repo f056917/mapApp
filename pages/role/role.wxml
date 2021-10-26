@@ -1,0 +1,49 @@
+<view class="role">
+  <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png" class="role-close" mode="aspectFit" bindtap="toBack"></image>
+  <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/ao_bo_tu_dark.png" class="role-title" mode="heightFix"></image>
+  <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/role_hint.png" class="role-hint" mode="heightFix"></image>
+  <view class="role-handle">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/role_options.png" mode="heightFix"></image>
+    <view>
+      <text>（</text>
+      <text>{{selCount}}</text>
+      <text>/9）</text>
+    </view>
+  </view>
+  <view class="role-main">
+    <view>
+      <block wx:for="{{roleList}}" wx:key="index">
+        <view class="role-type">
+          <text>{{item.groupName}}</text>
+        </view>
+        <block wx:for="{{item.roleList}}" wx:for-index="id" wx:for-item="items" wx:key="id">
+          <view class="role-item">
+            <view class="role-item-l">
+              <image src="{{items.head_img}}" mode="heightFix" catchtap="getPreview" data-img="{{items.img}}"></image>
+              <text>{{items.nickname}}</text>
+            </view>
+            <view class="role-item-r" catchtap="setRole" data-id="{{items.id}}">
+              <view class="role-avatar">
+                <image src="{{items.wx_headImg}}"></image>
+                <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/leader.png" mode="heightFix" wx:if="{{items.is_captain == 1}}"></image>
+              </view>
+              <text wx:if="{{items.wx_nickname}}">{{items.wx_nickname}}</text>
+              <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/confirm.png" class="role-item-bt" mode="widthFix" wx:else></image>
+            </view>
+          </view>
+        </block>
+      </block>
+    </view>
+    <view class="role-bt-box">
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/role_bt.png" class="role-bt" mode="heightFix" wx:if="{{userRoleStatus == 0}}"></image>
+      <view class="role-bt-act" wx:if="{{userRoleStatus == 1}}">
+        <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/role_bt_bg.png" mode="heightFix"></image>
+        <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/role_bt_name.png" mode="heightFix"></image>
+      </view>
+      <view class="role-bt" wx:if="{{userRoleStatus == 2}}" bindtap="start">
+        <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/role_bt_act.png" mode="heightFix"></image>
+        <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/role_start.png" mode="heightFix"></image>
+      </view>
+    </view>
+  </view>
+</view>

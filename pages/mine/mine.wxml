@@ -1,0 +1,31 @@
+<!--pages/mine/mine.wxml-->
+<view class="mine">
+  <view class="mine-close" bindtap="toBack">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png" mode="heightFix"></image>
+  </view>
+  <view class="mine-main">
+    <view class="mine-title">
+      <text>个人中心</text>
+    </view>
+    <view class="mine-box">
+      <view class="mine-box-l">
+        <image src="{{userInfo.headImgUrl}}" class="mine-avatar"></image>
+        <input value="{{userInfo.nickname}}" disabled class="mine-input-name" />
+      </view>
+    </view>
+    <view class="mine-box">
+      <view class="mine-box-l">
+        <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/coin.png" class="mine-coin"></image>
+      </view>
+      <view class="mine-box-r">
+        <input value="0" disabled class="mine-input-dollar" />
+        <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/dollar.png" class="mine-dollar"></image>
+      </view>
+    </view>
+    <view class="mine-box" bindtap="toHistory">
+      <view class="mine-box-l">
+        <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/mine_record.png" class="mine-record"></image>
+      </view>
+    </view>
+  </view>
+</view>

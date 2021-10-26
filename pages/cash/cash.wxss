@@ -1,0 +1,94 @@
+.cash {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #E9DFC8;
+  position: relative;
+  overflow: hidden;
+}
+.cash-main {
+  width: 636rpx;
+  height: 536rpx;
+  margin: 200rpx auto 0;
+  position: relative;
+  overflow: hidden;
+}
+.cash-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cash-close {
+  width: 82rpx;
+  height: 70rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 24rpx;
+  z-index: 10;
+}
+.cash-title {
+  width: 142rpx;
+  height: 52rpx;
+  margin: 44rpx auto 0;
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+.cash-box {
+  width: 486rpx;
+  height: 110rpx;
+  margin: 56rpx auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+.cash-box-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.case-code {
+  width: 440rpx;
+  height: 70rpx;
+  margin: 0 18rpx 20rpx 0;
+  position: relative;
+  z-index: 10;
+}
+.cash-hint {
+  width: 415rpx;
+  height: 18rpx;
+  margin: 20rpx 0 0 88rpx;
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+.cash-bt {
+  width: 204rpx;
+  height: 102rpx;
+  margin: 80rpx auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+.cash-bt-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.cash-bt-name {
+  width: 76rpx;
+  height: 40rpx;
+  margin-bottom: 19rpx;
+}

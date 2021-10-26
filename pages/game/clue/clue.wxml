@@ -1,0 +1,36 @@
+<view class="clue">
+  <view class="clue-close" bindtap="toBack">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png" mode="heightFix"></image>
+  </view>
+  <view class="clue-main">
+    <view class="clue-tab">
+      <block wx:for="{{tabList}}" wx:key="index">
+        <view class="clue-tab-box" bindtap="setAct" data-act="{{item.id}}">
+          <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/clue_tab.png" mode="widthFix" wx:if="{{item.id != tabAct}}"></image>
+          <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/clue_tab_act.png" mode="widthFix" wx:else></image>
+          <text class="{{item.id == tabAct?'clue-tab-text':''}}">{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+    <view class="clue-list" wx:if="{{clueList && clueList.length > 0}}">
+      <view class="clue-box">
+        <block wx:for="{{clueList}}" wx:key="index">
+          <view class="clue-item" bindtap="toClueInfo" data-val="{{item}}">
+            <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/0.png" mode="widthFix" wx:if="{{index > 9 && index < 19}}"></image>
+            <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/2.png" mode="widthFix" wx:if="{{index >= 19 && index < 29}}"></image>
+            <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/3.png" mode="widthFix" wx:if="{{index >= 29 && index < 39}}"></image>
+            <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/4.png" mode="widthFix" wx:if="{{index >= 39 && index < 49}}"></image>
+            <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/5.png" mode="widthFix" wx:if="{{index >= 49}}"></image>
+            <image src="{{'https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/' + (index + 1)%10 + '.png'}}" mode="widthFix"></image>
+            <text wx:if="{{item.is_can == 1}}" class="clue-item-c">{{item.name}}</text>
+            <text wx:if="{{item.is_can == 0}}" class="clue-item-c">获得一条线索，任务打卡后显示</text>
+            <view class="clue-item-r" wx:if="{{tabAct == 1}}">
+              <text>公开：</text>
+              <text>{{item.openNum}}/{{item.needOpenNum}}</text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

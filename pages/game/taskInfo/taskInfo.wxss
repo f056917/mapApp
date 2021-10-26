@@ -1,0 +1,118 @@
+.task-info {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 200rpx;
+  box-sizing: border-box;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/scroll.png) center no-repeat;
+  background-size: 90% 100%;
+  background-color: #E9DFC8;
+  position: relative;
+  overflow: hidden;
+}
+.task-info-close {
+  height: 86rpx;
+  position: absolute;
+  top: 34rpx;
+  right: 78rpx;
+  z-index: 10;
+}
+.task-info-close image {
+  height: 100%;
+}
+.task-info-head {
+  width: 442rpx;
+  height: 104rpx;
+  padding: 10rpx 24rpx 0 50rpx;
+  box-sizing: border-box;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/task_info_head.png) center no-repeat;
+  background-size: 100% 100%;
+  margin: 138rpx 0 28rpx 124rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task-info-head text:nth-child(1) {
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.task-info-head text:nth-child(2) {
+  flex: 1;
+  color: #fff;
+  font-size: 24rpx;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 8rpx;
+}
+.task-info-hint {
+  width: 430rpx;
+  margin: 0 auto 80rpx;
+}
+.task-info-hint text {
+  color: #333;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.task-info-image {
+  font-size: 0;
+  text-align: center;
+  margin-bottom: 120rpx;
+}
+.task-info-image image {
+  width: 60%;
+}
+.task-info-bt {
+  font-size: 0;
+  text-align: center;
+}
+.task-info-bt view {
+  width: 200rpx;
+  height: 102rpx;
+  text-align: center;
+  line-height: 92rpx;
+  color: #fff;
+  font-size: 38rpx;
+  font-weight: bold;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/bt_bg.png) center no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto 10rpx;
+}
+.task-info-bt text {
+  color: #333;
+  font-size: 16rpx;
+}
+.task-info-code {
+  width: 486rpx;
+  height: 110rpx;
+  padding: 0 18rpx 20rpx 0;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/code_bg.png) center no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.task-info-input {
+  width: 468rpx;
+  height: 136rpx;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/task_bt_bg.png) center no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.task-info-input input {
+  width: 80%;
+  color: #828282;
+  font-size: 28rpx;
+  text-align: center;
+}
+.task-info-confirm {
+  height: 78rpx;
+  text-align: center;
+}
+.task-info-confirm image {
+  height: 100%;
+}

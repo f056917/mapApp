@@ -1,0 +1,13 @@
+<view class="task-done">
+  <view class="task-done-head">
+    <view class="task-done-name">
+      <text>{{name}}</text>
+    </view>
+  </view>
+  <view class="task-box-img">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/open_box.png" mode="widthFix"></image>
+  </view>
+  <view class="task-box-bt">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/box_bt.png" mode="heightFix" bindtap="toClue"></image>
+  </view>
+</view>

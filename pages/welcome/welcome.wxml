@@ -1,0 +1,11 @@
+<view class="welcome">
+  <view class="welcome-title">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/welcome.png" mode="heightFix"></image>
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/name.png" mode="heightFix"></image>
+  </view>
+  <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/welcome_hint.png" class="welcome-hint" mode="heightFix"></image>
+  <view class="welcome-main">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/rabbit1.png" class="welcome-rabbit" mode="heightFix"></image>
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/welcome_bt.png" class="welcome-bt" mode="heightFix" bindtap="toMain"></image>
+  </view>
+</view>

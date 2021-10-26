@@ -1,0 +1,83 @@
+.mine {
+  width: 100%;
+  min-height: 100vh;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/scroll.png) center no-repeat;
+  background-size: 90% 100%;
+  background-color: #E9DFC8;
+  position: relative;
+  overflow: hidden;
+}
+.mine-close {
+  height: 86rpx;
+  position: absolute;
+  top: 34rpx;
+  right: 78rpx;
+  z-index: 10;
+}
+.mine-close image {
+  height: 100%;
+}
+.mine-main {
+  width: 480rpx;
+  padding: 28rpx 32rpx 32rpx;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/border.png) center no-repeat;
+  background-size: 100% 100%;
+  margin: 140rpx auto 400rpx;
+}
+.mine-title {
+  text-align: center;
+  padding-bottom: 20rpx;
+  border-bottom: 4rpx solid #333;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+.mine-title text {
+  color: #333;
+  font-size: 38rpx;
+  font-weight: bold;
+}
+.mine-box {
+  width: 100%;
+  height: 115rpx;
+  border-bottom: 6rpx solid #333;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mine-box-l, .mine-box-r {
+  display: flex;
+  align-items: center;
+}
+.mine-avatar {
+  width: 82rpx;
+  height: 82rpx;
+  border-radius: 50%;
+  margin-right: 40rpx;
+}
+.mine-input-name {
+  flex: 1;
+  color: #28303B;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.mine-coin {
+  width: 232rpx;
+  height: 82rpx;
+}
+.mine-dollar {
+  width: 30rpx;
+  height: 40rpx;
+}
+.mine-input-dollar {
+  flex: 1;
+  color: #28303B;
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: right;
+  margin: 0 10rpx;
+}
+.mine-record {
+  width: 246rpx;
+  height: 82rpx;
+}

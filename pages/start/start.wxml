@@ -1,0 +1,13 @@
+<view class="start">
+  <view class="start-close" bindtap="toBack">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png"></image>
+  </view>
+  <view class="start-main">
+    <block wx:for="{{startOptions}}" wx:key="index">
+      <view class="start-box" bindtap="toCash" data-val="{{item}}">
+        <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/options_bg.png" class="start-box-bg"></image>
+        <text class="start-box-name">{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+</view>

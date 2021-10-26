@@ -1,0 +1,32 @@
+<view class="scenic">
+  <view class="scenic-close" bindtap="toBack">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png" mode="heightFix"></image>
+  </view>
+  <view class="scenic-main">
+    <view class="scenic-image">
+      <image src="{{scenicInfo.img}}" mode="widthFix" wx:if="{{scenicInfo.img}}"></image>
+    </view>
+    <view class="scenic-content">
+      <view class="scenic-content-box">
+        <view>{{scenicInfo.name}}</view>
+        <view>{{scenicInfo.detail}}</view>
+      </view>
+    </view>
+    <view class="scenic-voice">
+      <image
+       src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/play.png" 
+       mode="widthFix" 
+       catchtap="play"
+       wx:if="{{!isPlay}}"></image>
+      <image
+       src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/pause.png" 
+       mode="widthFix" 
+       catchtap="pause"
+       wx:if="{{isPlay}}"></image>
+      <view class="scenic-step">
+        <view class="scenic-bg" style="width: {{currentTime/duration*100 + '%'}}"></view>
+        <view class="scenic-step-block" style="left: {{currentTime/duration*100 + '%'}}"></view>
+      </view>
+    </view>
+  </view>
+</view>

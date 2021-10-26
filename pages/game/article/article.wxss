@@ -1,0 +1,95 @@
+.article {
+  width: 100%;
+  height: 100vh;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/scroll.png) center no-repeat;
+  background-size: 90% 100%;
+  background-color: #E9DFC8;
+  position: relative;
+  overflow: hidden;
+}
+.article-close {
+  height: 86rpx;
+  position: absolute;
+  top: 34rpx;
+  right: 78rpx;
+  z-index: 10;
+}
+.article-close image {
+  height: 100%;
+}
+.article-options {
+  width: 320rpx;
+  height: 80rpx;
+  padding-right: 35rpx;
+  box-sizing: border-box;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/clue_tab.png) center no-repeat;
+  background-size: 100% 100%;
+  margin: 140rpx auto 9rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.article-name {
+  flex: 1;
+  color: #333;
+  font-size: 32rpx;
+  font-weight: bold;
+  text-align: center;
+}
+.article-name text {
+  white-space: nowrap;
+}
+.article-arrow {
+  width: 16rpx;
+}
+.article-arrow-show {
+  transition: 300ms;
+}
+.article-arrow-act {
+  transform: rotateZ(-90deg);
+}
+.article-options-box {
+  width: 100%;
+  height: 0;
+  background-color: #E9DFC8;
+  margin-top: 90rpx;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+  z-index: 10;
+  transition: 300ms;
+}
+.article-options-box view {
+  height: 40rpx;
+  color: #333;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 40rpx;
+  margin: 20rpx 0;
+}
+.article-show-options {
+  height: auto !important;
+}
+.article-content {
+  width: 480rpx;
+  height: calc(100vh - 360rpx);
+  box-sizing: border-box;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/border.png) center no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.article-content view {
+  width: 100%;
+  height: calc(100% - 80rpx);
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  margin-top: 40rpx;
+  overflow-y: auto;
+}
+.article-content text {
+  color: #333;
+  font-size: 32rpx;
+}

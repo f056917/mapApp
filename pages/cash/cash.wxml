@@ -1,0 +1,18 @@
+<view class="cash">
+  <view class="cash-main">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/cash_bg.png" class="cash-bg" mode="aspectFill"></image>
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png" class="cash-close" mode="aspectFill" bindtap="toBack"></image>
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/ao_bo_tu_dark.png" class="cash-title" mode="aspectFill"></image>
+    <view class="cash-box">
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/code_bg.png" class="cash-box-bg" mode="aspectFill"></image>
+      <view class="case-code">
+        <cash-box bindcomplated="complated"></cash-box>
+      </view>
+    </view>
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/cash_hint.png" class="cash-hint" mode="aspectFill"></image>
+    <view class="cash-bt" bindtap="toRole">
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/bt_bg.png" class="cash-bt-bg" mode="aspectFill"></image>
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/cash.png" class="cash-bt-name" mode="aspectFill"></image>
+    </view>
+  </view>
+</view>

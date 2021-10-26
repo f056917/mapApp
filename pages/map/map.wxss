@@ -1,0 +1,12 @@
+/* pages/map/map.wxss */
+.map-box {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.map {
+  width: 100%;
+  height: 100%;
+}

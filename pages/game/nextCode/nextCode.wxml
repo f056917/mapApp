@@ -1,0 +1,15 @@
+<view class="next-code">
+  <view class="next-code-head">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/next_code_name.png" mode="heightFix"></image>
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png" mode="heightFix" bindtap="toBack"></image>
+  </view>
+  <view class="next-code-main">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/lock.png" mode="heightFix"></image>
+  </view>
+  <view class="next-code-box">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/code_bg.png" class="next-code-bg" mode="aspectFill"></image>
+    <view class="next-code-cash">
+      <cash-box bindcomplated="complated"></cash-box>
+    </view>
+  </view>
+</view>

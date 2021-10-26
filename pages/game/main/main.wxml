@@ -1,0 +1,40 @@
+<view class="main">
+  <view class="main-head">
+    <view class="main-head-l" bindtap="toBack">
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/back.png" mode="widthFix"></image>
+    </view>
+    <view class="main-head-c">
+      <view style="margin-bottom: 10rpx;">
+        <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/main_title1.png" mode="widthFix"></image>
+        <text>{{gameMain.userProgressChapter}}</text>
+      </view>
+      <view>
+        <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/main_title2.png" mode="widthFix"></image>
+        <text>{{gameMain.userTaskName}}</text>
+      </view>
+    </view>
+    <view class="main-head-r" bindtap="toNextCode">
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/over.png" mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="main-map">
+    <map class="map" setting="{{setting}}" markers="{{markers}}" bindmarkertap="toScenic"></map>
+  </view>
+  <view class="main-jade" bindtap="toJade" wx:if="{{gameMain.isShowSkill == 1}}">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/jade.png" mode="widthFix"></image>
+  </view>
+  <view class="main-footer">
+    <view bindtap="toArticle">
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/article_icon.png" mode="heightFix"></image>
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/article.png" mode="heightFix"></image>
+    </view>
+    <view bindtap="toClue">
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/clue_icon.png" mode="heightFix"></image>
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/clue.png" mode="heightFix"></image>
+    </view>
+    <view bindtap="toTask">
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/task_icon.png" mode="heightFix"></image>
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/task.png" mode="heightFix"></image>
+    </view>
+  </view>
+</view>

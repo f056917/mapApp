@@ -1,0 +1,85 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.main-head {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.main-head-l image {
+  width: 58rpx;
+}
+.main-head-c {
+  margin: 0 20rpx;
+}
+.main-head-c view {
+  display: flex;
+  align-items: center;
+}
+.main-head-c view image {
+  width: 183rpx;
+  margin-right: 20rpx;
+}
+.main-head-c view text {
+  color: #fff;
+  font-size: 32rpx;
+}
+.main-head-r {
+  font-size: 0;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}
+.main-head-r image {
+  width: 98rpx;
+}
+.main-map {
+  width: 100%;
+  height: 100%;
+}
+.map {
+  width: 100%;
+  height: 100%;
+}
+.main-jade {
+  width: 160rpx;
+  position: absolute;
+  right: 0;
+  bottom: 160rpx;
+  z-index: 5;
+}
+.main-jade image {
+  width: 100%;
+}
+.main-footer {
+  width: 100%;
+  padding-bottom: 20rpx;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.main-footer view {
+  text-align: center;
+}
+.main-footer view image:nth-child(1) {
+  height: 120rpx;
+  display: block;
+}
+.main-footer view image:nth-child(2) {
+  height: 30rpx;
+}

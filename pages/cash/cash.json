@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cash-box": "/components/cashBox/cashBox"
+  },
+  "navigationBarBackgroundColor": "#E9DFC8"
+}

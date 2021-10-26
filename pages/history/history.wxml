@@ -1,0 +1,20 @@
+<view class="history">
+  <view class="history-close" bindtap="toBack">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png" mode="heightFix"></image>
+  </view>
+  <view class="history-main">
+    <view class="history-title">
+      <text>探索记录</text>
+    </view>
+    <block wx:for="{{historyList}}" wx:key="index">
+      <view class="history-box">
+        <view class="history-box-name">
+          <text>{{item.name}}</text>
+        </view>
+        <view class="history-box-time">
+          <text>{{item.createTimeText}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

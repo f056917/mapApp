@@ -1,0 +1,66 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.home-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -10;
+}
+.home-name {
+  text-align: right;
+}
+.home-name image {
+  width: 310rpx;
+  height: 520rpx;
+}
+.home-mine {
+  width: 220rpx;
+  height: 164rpx;
+  position: absolute;
+  bottom: 0;
+  left: 10rpx;
+  z-index: 10;
+}
+.home-mine image {
+  width: 100%;
+  height: 100%;
+}
+.home-map {
+  width: 346rpx;
+  height: 127rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.home-map image {
+  width: 100%;
+  height: 100%;
+}
+.home-role {
+  width: 100%;
+  height: 1236rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+.home-role-bg {
+  width: 100%;
+  height: 100%;
+}
+.home-role-start {
+  width: 228rpx;
+  height: 74rpx;
+  position: absolute;
+  top: 810rpx;
+  left: 425rpx;
+  z-index: 10;
+}

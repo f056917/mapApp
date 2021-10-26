@@ -1,0 +1,63 @@
+.jade {
+  width: 100%;
+  min-height: 100vh;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/scroll.png) center no-repeat;
+  background-size: 90% 100%;
+  background-color: #E9DFC8;
+  position: relative;
+  overflow: hidden;
+}
+.jade-close {
+  height: 86rpx;
+  position: absolute;
+  top: 34rpx;
+  right: 78rpx;
+  z-index: 10;
+}
+.jade-close image {
+  height: 100%;
+}
+.jade-main {
+  width: 476rpx;
+  min-height: 600rpx;
+  padding: 24rpx 32rpx 48rpx;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/border.png) center no-repeat;
+  background-size: 100% 100%;
+  margin: 150rpx auto 600rpx;
+}
+.jade-title {
+  text-align: center;
+  padding-bottom: 12rpx;
+  border-bottom: 6rpx solid #333;
+  margin: 20rpx 0 40rpx;
+}
+.jade-title text {
+  color: #333;
+  font-size: 44rpx;
+  font-weight: bold;
+}
+.jade-image {
+  width: 216rpx;
+  margin: 0 auto 40rpx;
+}
+.jade-image image {
+  width: 100%;
+}
+.jade-hint {
+  margin-bottom: 120rpx;
+}
+.jade-hint text {
+  color: #333;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.jade-rabbit {
+  height: 720rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+}
+.jade-rabbit image {
+  height: 100%;
+}

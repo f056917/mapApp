@@ -1,0 +1,19 @@
+<view class="jade">
+  <view class="jade-close" bindtap="toBack">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png" mode="heightFix"></image>
+  </view>
+  <view class="jade-main">
+    <view class="jade-title">
+      <text>玉佩技能</text>
+    </view>
+    <view class="jade-image">
+      <image src="{{jadeInfo.img}}" mode="widthFix" wx:if="{{jadeInfo.img}}"></image>
+    </view>
+    <view class="jade-hint">
+      <text>{{jadeInfo.detail}}</text>
+    </view>
+  </view>
+  <view class="jade-rabbit">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/rabbit2.png" mode="heightFix"></image>
+  </view>
+</view>

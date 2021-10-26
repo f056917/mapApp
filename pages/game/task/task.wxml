@@ -1,0 +1,34 @@
+<view class="task">
+  <view class="task-close" bindtap="toBack">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png" mode="heightFix"></image>
+  </view>
+  <view class="task-title">
+    <text>任务发布</text>
+  </view>
+  <view class="task-main" wx:if="{{taskList && taskList.length > 0}}">
+    <view class="task-main-box">
+      <block wx:for="{{taskList}}" wx:key="index">
+        <view class="task-box {{taskAct === index?'task-box-show':''}}" bindtap="setAct" data-id="{{index}}">
+          <view class="task-item">
+            <view class="task-item-l">
+              <text>{{item.name}}</text>
+              <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/task_undone.png" mode="heightFix" wx:if="{{item.taskListStatus == 1}}"></image>
+            </view>
+            <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/arrow.png" class="task-item-r {{taskAct === index?'task-arrow-act':''}}" mode="widthFix"></image>
+          </view>
+          <view class="task-list">
+            <block wx:for="{{item.taskList}}" wx:for-item="items" wx:for-index="taskId" wx:key="taskId">
+              <view class="task-list-item" catchtap="toTaskInfo" data-val="{{items}}">
+                <text>{{items.taskName}}</text>
+                <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/task_done.png" mode="heightFix" wx:if="{{items.taskStatus == 1}}"></image>
+              </view>
+            </block>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="task-rabbit">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/rabbit2.png" mode="heightFix"></image>
+  </view>
+</view>

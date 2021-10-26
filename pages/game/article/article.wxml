@@ -1,0 +1,23 @@
+<view class="article" bindtap="checkArrow">
+  <view class="article-close" bindtap="toBack">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png" mode="heightFix"></image>
+  </view>
+  <view class="article-options">
+    <view class="article-name" catchtap="setArrow">
+      <text>{{name}}</text>
+    </view>
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/arrow.png" class="article-arrow {{isArrow?'article-arrow-act':''}} {{showArrow?'article-arrow-show':''}}" mode="widthFix"></image>
+    <view class="article-options-box {{isArrow?'article-show-options':''}}">
+      <block wx:for="{{articleList}}" wx:key="index">
+        <view catchtap="changeArticle" data-val="{{item}}">
+          <text>{{item.title}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="article-content">
+    <view>
+      <text>{{content}}</text>
+    </view>
+  </view>
+</view>

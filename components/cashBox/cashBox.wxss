@@ -1,0 +1,62 @@
+.input {
+  font-size: 0;
+  margin-top: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.input-item {
+  position: relative;
+  display: inline-block;
+  width: 84rpx;
+  height: 60rpx;
+  padding: 0 13rpx;
+}
+.bdl-1-white {
+  border-right: 1rpx solid #fff;
+}
+.input-value {
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28rpx;
+}
+.input-password {
+  position: absolute;
+  left: -360rpx;
+  top: 0;
+  height: 100%;
+  width: 880rpx;
+  opacity: 0;
+  z-index: 100;
+}
+.focus {
+  width: 2rpx;
+  height: 50rpx;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.show {
+  display: block;
+  animation: blink 1s linear infinite;
+}
+.hide {
+  display: none;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  50.01%, to {
+    opacity: 0;
+  }
+}

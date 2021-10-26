@@ -1,0 +1,112 @@
+.task {
+  width: 100%;
+  min-height: 100vh;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/scroll.png) top no-repeat;
+  background-size: 90% 75%;
+  background-color: #E9DFC8;
+  position: relative;
+  overflow: hidden;
+}
+.task-close {
+  height: 86rpx;
+  position: absolute;
+  top: 34rpx;
+  right: 78rpx;
+  z-index: 10;
+}
+.task-close image {
+  height: 100%;
+}
+.task-title {
+  text-align: center;
+  margin: 120rpx 0 24rpx;
+}
+.task-title text {
+  color: #333;
+  font-size: 48rpx;
+  font-weight: bold;
+}
+.task-main {
+  width: 480rpx;
+  height: calc(100vh - 460rpx);
+  box-sizing: border-box;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/border.png) center no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto 650rpx;
+  overflow: hidden;
+}
+.task-main-box {
+  width: 100%;
+  height: calc(100% - 70rpx);
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+  overflow-y: auto;
+}
+.task-box {
+  height: 90rpx;
+  overflow: hidden;
+}
+.task-box-show {
+  height: auto !important;
+}
+.task-item {
+  height: 90rpx;
+  padding: 0 10rpx 0 20rpx;
+  border-bottom: 6rpx solid #333;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.task-item-l {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task-item-l text {
+  color: #333;
+  font-size: 38rpx;
+  font-weight: bold;
+}
+.task-item-l image {
+  height: 70rpx;
+}
+.task-item-r {
+  width: 16rpx;
+  margin-left: 120rpx;
+}
+.task-arrow-act {
+  transform: rotateZ(-90deg);
+}
+.task-list-item {
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  border-bottom: 6rpx solid #333;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.task-list-item text {
+  color: #333;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.task-list-item image {
+  height: 70rpx;
+  position: absolute;
+  top: 50%;
+  right: 22rpx;
+  transform: translate(0, -50%);
+}
+.task-rabbit {
+  height: 712rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.task-rabbit image {
+  height: 100%;
+}

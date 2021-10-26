@@ -1,0 +1,7 @@
+<view class="input">
+  <view class="input-item {{index != 3 ? 'bdl-1-white':''}}" wx:for="{{4}}" wx:key="index" data-index="{{index}}">
+    <view class="input-value">{{password[index]}}</view>
+    <view class="focus {{index === focusIndex ? 'show': 'hide'}}"></view>
+ </view>
+ <input class="input-password" maxlength="4" bindinput="setValue" bindblur="inputBlur" focus="{{focus}}"></input>
+</view>

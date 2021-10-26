@@ -1,0 +1,90 @@
+.scenic {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 200rpx;
+  box-sizing: border-box;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/scroll.png) center no-repeat;
+  background-size: 90% 100%;
+  background-color: #E9DFC8;
+  position: relative;
+  overflow: hidden;
+}
+.scenic-close {
+  height: 86rpx;
+  position: absolute;
+  top: 34rpx;
+  right: 78rpx;
+  z-index: 10;
+}
+.scenic-close image {
+  height: 100%;
+}
+.scenic-main {
+  width: 476rpx;
+  margin: 180rpx auto 0;
+}
+.scenic-image {
+  width: 100%;
+  margin-bottom: 40rpx;
+}
+.scenic-image image {
+  width: 100%;
+}
+.scenic-content {
+  width: 100%;
+  height: 55vh;
+  box-sizing: border-box;
+  background: url(https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/border.png) center no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 40rpx;
+  overflow: hidden;
+}
+.scenic-content-box {
+  width: 100%;
+  height: calc(100% - 56rpx);
+  padding: 0 26rpx;
+  box-sizing: border-box;
+  margin-top: 26rpx;
+  overflow-y: auto;
+}
+.scenic-content-box view {
+  color: #333;
+  font-size: 24rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+.scenic-voice {
+  margin-bottom: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.scenic-voice image {
+  width: 72rpx;
+  margin-right: 30rpx;
+}
+.scenic-step {
+  flex: 1;
+  height: 8rpx;
+  padding-right: 10rpx;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  background-color: #666;
+  position: relative;
+}
+.scenic-bg {
+  height: 100%;
+  background-color: #333;
+}
+.scenic-step-block {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background-color: #333;
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}

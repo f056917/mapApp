@@ -1,0 +1,16 @@
+<view class="home">
+  <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/home_bg.png" mode="aspectFill" class="home-bg"></image>
+  <view class="home-name">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/home_name.png" mode="aspectFit"></image>
+  </view>
+  <view class="home-mine" bindtap="toMine">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/home_mine.png" mode="aspectFit"></image>
+  </view>
+  <view class="home-map" bindtap="toMap">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/home_map.png" mode="aspectFit"></image>
+  </view>
+  <view class="home-role">
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/home_role.png" class="home-role-bg"></image>
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/home_start.png" class="home-role-start" bindtap="toStart"></image>
+  </view>
+</view>
