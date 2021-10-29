@@ -15,7 +15,7 @@
     <image src="{{taskInfo.img}}" mode="widthFix" wx:if="{{taskInfo.img}}"></image>
   </view>
   <!-- <view class="task-info-bt" wx:if="{{taskInfo.answer_type == 0 && taskInfo.taskStatus == 0}}"> -->
-  <view class="task-info-bt" wx:if="{{taskInfo.taskStatus == 0 && taskInfo.answer_type != 3}}">
+  <view class="task-info-bt" wx:if="{{taskInfo.taskStatus == 0 && taskInfo.answer_type != 3 && isExpire == 0}}">
     <view bindtap="clockIn">打卡</view>
     <text>提交任务</text>
   </view>

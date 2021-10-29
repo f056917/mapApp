@@ -53,23 +53,26 @@ export function request(methodType, url, params, successCb, errorCb, compLeteCb)
                     if (!wx.getStorageSync('token')) return
                     wx.showToast({
                         title: '请重新登录',
-                        icon: 'none'
+                        icon: 'none',
+                        duration: 2500
                     })
                     wx.clearStorageSync('token')
                     wx.navigateTo({
                         url: '/pages/index/index',
                     })
-                } else if (code !=200 && code != 10004 && code != 10031 && code != 10032 && code != 10033 && code != 10034) {
+                } else if (code !=200 && code != 10004 && code != 10031 && code != 10032 && code != 10033 && code != 10034 && code != 10018) {
                     wx.showToast({
                         title: res.data.message ? res.data.message : '服务器异常',
-                        icon: 'none'
+                        icon: 'none',
+                        duration: 2500
                     })
                 }
                 ads.isFunction(successCb) && successCb(res.data);
             } else if (res.statusCode == 404) {
                 wx.showToast({
                     title: '请求异常',
-                    icon: 'none'
+                    icon: 'none',
+                    duration: 2500
                 })
             } else {}
 
@@ -77,7 +80,8 @@ export function request(methodType, url, params, successCb, errorCb, compLeteCb)
         error: function (res) {
             ads.isFunction(errorCb) && errorCb(res);
             wx.showToast({
-                title: '服务异常'
+                title: '服务异常',
+                duration: 2500
             })
         },
         complete: function (res) {

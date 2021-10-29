@@ -31,10 +31,8 @@
   box-sizing: border-box;
   margin-bottom: 20rpx;
 }
-.mine-title text {
-  color: #333;
-  font-size: 38rpx;
-  font-weight: bold;
+.mine-title image {
+  height: 44rpx;
 }
 .mine-box {
   width: 100%;

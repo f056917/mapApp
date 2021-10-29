@@ -102,5 +102,8 @@ Page({
     this.setData({
       isLogin: !!wx.getStorageSync('token')
     })
+    if (wx.getStorageSync('token')) {
+      app.getUser()
+    }
   }
 })

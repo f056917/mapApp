@@ -5,7 +5,7 @@
   </view>
   <view class="mine-main">
     <view class="mine-title">
-      <text>个人中心</text>
+      <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/mine_title.png" mode="heightFix"></image>
     </view>
     <view class="mine-box">
       <view class="mine-box-l">

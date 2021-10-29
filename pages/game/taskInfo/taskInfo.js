@@ -11,7 +11,8 @@ Page({
     taskInfo: {},
     code: '',
     latitude: '',
-    longitude: ''
+    longitude: '',
+    isExpire: ''
   },
 
   getInfo () {
@@ -84,9 +85,9 @@ Page({
           latitude: res.latitude,
           longitude: res.longitude
         })
-        that.clockTask()
         wx.hideLoading()
         wx.offLocationChange(_locationChangeFn)
+        that.clockTask()
       }
       wx.startLocationUpdate({
         success: (res) => {
@@ -117,7 +118,7 @@ Page({
     const latitudeDist = this.countDist(this.data.latitude, latitude)
     const longitudeDist = this.countDist(this.data.longitude, longitude)
     const dist = (Math.sqrt(latitudeDist*latitudeDist + longitudeDist*longitudeDist)).toFixed()
-    if (dist < 999999) {
+    if (dist < 99999999999) {
       if (this.data.taskInfo.answer_type == 0) {
         this.doneTask()
       } else {
@@ -130,7 +131,7 @@ Page({
       wx.showToast({
         title: '任务目标太远',
         icon: "error",
-        duration: 1500
+        duration: 2500
       })
     }
   },
@@ -165,8 +166,10 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      taskId: options.id
+      taskId: options.id,
+      isExpire: Number(options.isExpire)
     })
+    wx.setStorageSync('taskAct', Number(options.taskAct))
     this.getInfo()
   },
 

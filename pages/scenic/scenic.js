@@ -1,6 +1,6 @@
 // pages/scenic/scenic.js
 import { getScriptAttractionsDeatil } from '../../utils/request'
-let audioCtx = wx.createInnerAudioContext()
+let audioCtx = ''
 
 Page({
 
@@ -49,6 +49,7 @@ Page({
       id: options.id
     })
     this.getScenicc()
+    audioCtx = wx.createInnerAudioContext()
     audioCtx.onPlay(() => {
       this.setData({
         isPlay: true

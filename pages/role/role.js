@@ -12,7 +12,9 @@ Page({
     userRoleStatus: '',
     selCount: 0,
     roleList: [],
-    timer: ''
+    timer: '',
+    showMask: false,
+    maskContent: ''
   },
 
   getList () {
@@ -58,6 +60,11 @@ Page({
     selectRole(params, res => {
       if (res.code == 200) {
         this.getList()
+      } else {
+        this.setData({
+          showMask: true,
+          maskContent: res.data.message
+        })
       }
     })
   },
@@ -73,6 +80,11 @@ Page({
           url: '/pages/welcome/welcome'
         })
       }
+    })
+  },
+  hideMask () {
+    this.setData({
+      showMask: false
     })
   },
 

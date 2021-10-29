@@ -10,10 +10,10 @@ Page({
       longitude: 121.64634,
       subkey: 'ROGBZ-KJPRS-D2POT-673CF-VMRQK-3IBQO',
       scale: 18,
-      minScale: 3,
+      minScale: 10,
       enableOverlooking: true,
       showLocation: true,
-      enablePoi: true,
+      enablePoi: false,
       enableBuilding: false
     },
     markers: []

@@ -16,7 +16,7 @@ Page({
       if (res.code == 200) {
         this.setData({
           taskList: res.data,
-          taskAct: res.data.length - 1
+          taskAct: wx.getStorageSync('taskAct') !== '' ? wx.getStorageSync('taskAct') : res.data.length - 1
         })
       }
     })
@@ -34,8 +34,9 @@ Page({
   },
   toTaskInfo (options) {
     const val = options.currentTarget.dataset.val
+    const vals = options.currentTarget.dataset.vals
     wx.navigateTo({
-      url: '/pages/game/taskInfo/taskInfo?id=' + val.taskId,
+      url: '/pages/game/taskInfo/taskInfo?id=' + vals.taskId + '&taskAct=' + this.data.taskAct + '&isExpire=' + val.taskListStatus,
     })
   },
 
@@ -71,7 +72,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    wx.removeStorageSync('taskAct')
   },
 
   /**

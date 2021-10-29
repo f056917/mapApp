@@ -46,4 +46,9 @@
       </view>
     </view>
   </view>
+  <view class="role-mask" wx:if="{{showMask}}" catchtap="hideMask">
+    <view>
+      <text>{{maskContent}}</text>
+    </view>
+  </view>
 </view>

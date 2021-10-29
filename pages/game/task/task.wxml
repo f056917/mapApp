@@ -18,7 +18,7 @@
           </view>
           <view class="task-list">
             <block wx:for="{{item.taskList}}" wx:for-item="items" wx:for-index="taskId" wx:key="taskId">
-              <view class="task-list-item" catchtap="toTaskInfo" data-val="{{items}}">
+              <view class="task-list-item" catchtap="toTaskInfo" data-val="{{item}}" data-vals="{{items}}">
                 <text>{{items.taskName}}</text>
                 <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/task_done.png" mode="heightFix" wx:if="{{items.taskStatus == 1}}"></image>
               </view>
