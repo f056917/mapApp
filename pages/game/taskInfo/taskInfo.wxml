@@ -3,9 +3,10 @@
     <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/close.png" mode="heightFix"></image>
   </view>
   <view class="task-info-head">
-    <text wx:if="{{taskInfo.type == 0}}">公共任务</text>
-    <text wx:if="{{taskInfo.type == 1}}">小组任务</text>
-    <text wx:if="{{taskInfo.type == 2}}">个人任务</text>
+    <text wx:if="{{taskInfo.type == 0 && taskInfo.answer_type != 3}}">公共任务</text>
+    <text wx:if="{{taskInfo.type == 1 && taskInfo.answer_type != 3}}">小组任务</text>
+    <text wx:if="{{taskInfo.type == 2 && taskInfo.answer_type != 3}}">个人任务</text>
+    <text wx:if="{{taskInfo.answer_type == 3}}">终极任务</text>
     <text>{{taskInfo.name}}</text>
   </view>
   <view class="task-info-hint">
@@ -16,8 +17,9 @@
   </view>
   <!-- <view class="task-info-bt" wx:if="{{taskInfo.answer_type == 0 && taskInfo.taskStatus == 0}}"> -->
   <view class="task-info-bt" wx:if="{{taskInfo.taskStatus == 0 && taskInfo.answer_type != 3 && isExpire == 0}}">
-    <view bindtap="clockIn">打卡</view>
-    <text>提交任务</text>
+    <!-- <view bindtap="clockIn">打卡</view> -->
+    <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/task_bt.png" bindtap="clockIn" mode="heightFix"></image>
+    <!-- <text>提交任务</text> -->
   </view>
   <!-- <view class="task-info-code" wx:if="{{taskInfo.answer_type == 1 && taskInfo.taskStatus == 0}}">
     <cash-box bindcomplated="complated"></cash-box>

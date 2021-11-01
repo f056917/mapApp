@@ -47,8 +47,7 @@
 }
 .clue-info-content {
   color: #333;
-  font-size: 22rpx;
-  font-weight: bold;
+  font-size: 34rpx;
   margin-bottom: 190rpx;
 }
 .clue-info-bt {

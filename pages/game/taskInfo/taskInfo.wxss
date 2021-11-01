@@ -51,8 +51,7 @@
 }
 .task-info-hint text {
   color: #333;
-  font-size: 28rpx;
-  font-weight: bold;
+  font-size: 34rpx;
 }
 .task-info-image {
   font-size: 0;
@@ -65,6 +64,9 @@
 .task-info-bt {
   font-size: 0;
   text-align: center;
+}
+.task-info-bt image {
+  height: 60rpx;
 }
 .task-info-bt view {
   width: 200rpx;

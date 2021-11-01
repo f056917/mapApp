@@ -20,7 +20,8 @@
             <block wx:for="{{item.taskList}}" wx:for-item="items" wx:for-index="taskId" wx:key="taskId">
               <view class="task-list-item" catchtap="toTaskInfo" data-val="{{item}}" data-vals="{{items}}">
                 <text>{{items.taskName}}</text>
-                <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/task_done.png" mode="heightFix" wx:if="{{items.taskStatus == 1}}"></image>
+                <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/task_done.png" mode="heightFix" wx:if="{{items.taskStatus == 1}}" class="task-list-done"></image>
+                <image src="https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/end.png" mode="heightFix" wx:if="{{items.answer_type == 3}}" class="task-list-end"></image>
               </view>
             </block>
           </view>

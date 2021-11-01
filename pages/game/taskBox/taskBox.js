@@ -27,7 +27,16 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    let audioCtx = wx.createInnerAudioContext()
+    audioCtx.src = 'https://linwuhehuan.oss-accelerate-overseas.aliyuncs.com/xqtn/baoxiang.mp3'
+    audioCtx.play()
+    audioCtx.onError(res => {
+      console.log(res)
+      wx.showToast({
+        title: res.errMsg,
+        icon: 'error'
+      })
+    })
   },
 
   /**

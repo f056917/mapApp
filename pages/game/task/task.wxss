@@ -93,11 +93,18 @@
   font-size: 26rpx;
   font-weight: bold;
 }
-.task-list-item image {
+.task-list-done {
   height: 70rpx;
   position: absolute;
   top: 50%;
   right: 22rpx;
+  transform: translate(0, -50%);
+}
+.task-list-end {
+  height: 60rpx;
+  position: absolute;
+  top: 50%;
+  right: 10rpx;
   transform: translate(0, -50%);
 }
 .task-rabbit {
